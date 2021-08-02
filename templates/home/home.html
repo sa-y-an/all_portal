@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'base.html' %} {% load static %} {% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'home/home.css' %}">
+    <title>{% block title%} Home {% endblock %}</title>
+</head>
+
+
+    <div class="container">
+
+      <p>
+     {% if user.is_authenticated %}
+     Hello {{ user.username }} !!!
+     {% endif %}
+     </p>
+      <ol>
+        <li>
+          <a href="{% url 'posts:feed' %}" target="_blank" > Projects Feed </a>
+        </li>
+      </ol>
+    </div>
+
+  
+    {% endblock %}

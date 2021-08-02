@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base.html' %} {% load static %} {% block content %}
+<head>
+    <title>{% block title%} Information {% endblock %}</title>
+</head>
+
+<div class="container">
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        {% for i in posts %}
+        <tbody>
+          <tr>
+            <td> <a href="{% url 'usr_val:stinfo' i.id %}">{{i.title }} </a></td>
+            <td> 
+
+                {{i.description}}
+            </td>
+          </tr>
+        </tbody>
+
+        {% endfor %}
+      </table>
+</div>
+
+
+{% endblock %}

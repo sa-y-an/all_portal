@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% extends 'base.html' %} {% load static %} {% block content %}
+<head>
+    <title>{% block title%} Projects{% endblock %}</title>
+    <style>
+        .posts{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .card {
+            margin: 2em;
+            padding: 2em;
+        }
+    </style>
+</head>
+
+    <div class="container">
+        <p>The List of currently available projects are given below. </p>
+    </div>
+
+    <!-- Heading -->
+    <h1 align="center">Feed page</h1>
+
+
+
+    <!-- CARD -->
+    <div class="container posts">
+    {% for i in posts %}
+        <div class="card" style="width: 30vw;" >
+            <img src="{{i.image_url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">{{i.title }}</h5>
+            <p class="card-text">{{i.description}}</p>
+            <p class="card-text fw-bold">
+                {{i.tag}}
+            </p>
+            
+            <h4>
+                Posted By
+            </h4>
+            <p>
+                {{i.teacher.user.username}}
+            </p>
+
+
+            <a href="{% url 'usr_val:apply' i.id %}" class="btn btn-primary">Know More</a>
+            </div>
+
+            <hr>
+            
+        </div>
+
+        <br>
+    {% endfor %}
+    </div>
+
+    <!-- CARD -->
+  
+{% endblock %}

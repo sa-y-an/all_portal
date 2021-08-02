@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'base.html' %} {% load static %} {% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'home/home.css' %}">
+    <link rel="stylesheet" href="{% static 'home/mile.css' %}">
+    <title>{% block title%} Milestones Reached{% endblock %}</title>
+</head>
+
+
+    <div class="container">
+      <h1>
+          Milestones Reached
+      </h1>
+    </div>
+
+  
+    {% endblock %}

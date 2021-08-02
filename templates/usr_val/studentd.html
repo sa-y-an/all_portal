@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'base.html' %} {% load static %} {% block content %}
+<head>
+    <title>{% block title%} Student Dashboard{% endblock %}</title>
+</head>
+
+<div class="container">
+    Hello {{ user.username }}, !!!
+
+    <div class="container">
+        <h4>
+            Personal Details
+        </h4>
+
+        <p>
+            <ol>
+                <li>
+                    {{user.first_name}}
+                </li>
+                <li>
+                    {{user.last_name}}
+                </li>
+                <li>
+                    {{user.email}}
+                </li>
+            </ol>
+        </p>
+    </div>
+  
+{% endblock %}
