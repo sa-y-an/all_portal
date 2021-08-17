@@ -2,8 +2,8 @@
 
 A simple portal for posting and applying made possible by django. Supports all databases supported by django. 
 Currently uses - 
-1. postgress for deployment (```manage.py```)
-2. sqlite for development (```local.py```)
+1. postgress in deployment (```manage.py```)
+2. sqlite in development (```local.py```)
 
 ## Use Cases 
 
