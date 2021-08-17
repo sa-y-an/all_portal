@@ -12,6 +12,10 @@ Can be easily modified to be used in any place where one user group posts a proj
 - College's Research portal where teacher can post a project and student can apply
 - Jobs Portal - Companies posts jobs and user applies 
 
+### Live Demo
+
+A live demo can be seen at <a href="https://allportal.herokuapp.com/">https://allportal.herokuapp.com/</a>
+
 ## Usage Guidelines
 
 <p>
