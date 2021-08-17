@@ -1,58 +1,50 @@
-# RP draft
+# All Portal
+
+A simple portal for posting and applying made possible by django.
+
+## Use Cases 
+
+<p>
+Can be easily modified to be used in any place where one user group posts a project or job and another user group applies to it. 
+</p>
+
+<u>Common use cases - </u>
+- College's Research portal where teacher can post a project and student can apply
+- Jobs Portal - Companies posts jobs and user applies 
+
+## Usage Guidelines
+
+<p>
+After Installation and setup (see below)
+</p>
+
+- Create a faculty account update your profile and post projects
+- Create a students account and apply to them.
+
 
 ## Setup Guidelines 
 - After sucessfull installation create a .env in the directory where settings.py is located 
-- It must have the content as follows 
-<img src = "screenshots/env.png" align="center"/>
+- It must have the content as the .env.example file
 
-- Create two groups (student and teacher) from the admin panel or shell 
-<img src="screenshots/groups.png" align="center" />
-
+### Important
+- After installation (see below) Create two groups (student and teacher) from the admin panel or shell namely ```student``` and ```teacher```
 
 
 
 ## Installation Guidelines
 
-
-### For Windows
-
-Install virtualenvironment (if not already)
-```
-pip install virtualenv
-virtualenv myenv
-```
-
-Activate virtualenv
-```
-myenv/scripts/activate
-```
-
-> PS : Linux Users follow different guidelines 
-> For further details refer <a href="https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/">https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/</a>
-
-
-Django Installation ( Developer Mode )
+1. Install and activate Virtual environment and install requirements by - 
 ```
 pip install -r requirements.txt
+```
+2. Make the all migrations and run the server
+```
 python local.py makemigrations
 python local.py migrate
 python local.py runserver
 ```
 
-- Follow the setup guidelines above after this.
-
-> Navigate to localhost:8000 to see the magic <br>
-> PS 2: For more details refer to this tutorial <a href="https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html"> Tutorial </a> <br>
 
 ## Contribution Guidelines 
 
-- Fork this Repo
-- Create a branch in the forked repo 
-```
-git branch develop
-git checkout develop
-```
-- Make Changes 
-- Push to your repo & make a pull request
-
-> PS 3 : Instructions to update git forked repo <a href="https://medium.com/@topspinj/how-to-git-rebase-into-a-forked-repo-c9f05e821c8a"> Medium </a>
+Any changes are whole heartedly welcome, create an issue to report a bug. Or even better make a pr to fix it. 
