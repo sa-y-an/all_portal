@@ -12,8 +12,9 @@ Can be easily modified to be used in any place where one user group posts a proj
 </p>
 
 <u>Common use cases - </u>
-- College's Research portal where teacher can post a project and student can apply
-- Jobs Portal - Companies posts jobs and user applies 
+- College's **Research portal** where teacher can post a project and student can apply
+- **Jobs Portal** - Companies posts jobs and user applies 
+- **e-commerce app** - Vendors Posts about items and prices and customer buys them ( in that case a payment gateway needs to be integrated )
 
 ### Live Demo
 
