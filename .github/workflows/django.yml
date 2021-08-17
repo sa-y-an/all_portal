@@ -30,5 +30,6 @@ jobs:
         SECRET_KEY : 'fhguhu2136@fhjyj'
         EMAIL_HOST_USER : 'abc@gmail.com'
         PASSWORD : 'password'
+        DEBUG : 'True'
       run: |
         python local.py test
