@@ -18,6 +18,7 @@ Can be easily modified to be used in any place where one user group posts a proj
 ### Live Demo
 
 A live demo can be seen at <a href="https://allportal.herokuapp.com/">https://allportal.herokuapp.com/</a>
+> PS: Give some time for the site to load ( The Heroku containers might be restarting after a long hibernation XD )
 
 ## Usage Guidelines
 
