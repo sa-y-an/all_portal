@@ -60,7 +60,9 @@ python local.py runserver
 
 ## Contribution Guidelines 
 
-Any changes are whole heartedly welcome, create an issue to report a bug. Or even better make a pr to fix it. 
+- Any changes are whole heartedly welcome, create an issue to report a bug. Or even better make a pr to fix it. 
+- Currently two issues are there, you can start by fixing them ( the second one is pretty straight forward :)) )
+- In case of any difficulty or doubt please feel free to start a discussion in the discussion tab and don't forget to tag me XD.
 
 > PS : If you use this for ypur project or work please consider starring it.
 > Initially this was build to serve as the research portal of NIT Dgp which now is converted to serve as a rest api for an asynchronous frontend and can be found <a href="https://github.com/sa-y-an/rportal1"> here </a>. 
