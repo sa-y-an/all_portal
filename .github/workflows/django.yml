@@ -31,4 +31,4 @@ jobs:
         EMAIL_HOST_USER : 'abc@gmail.com'
         PASSWORD : 'password'
       run: |
-        python manage.py test
+        python local.py test
