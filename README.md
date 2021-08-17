@@ -45,9 +45,12 @@ python local.py migrate
 python local.py runserver
 ```
 
+> ### Note Important
+> I created ```local.py``` to mirror django's ```manage.py``` and use it for development to know more about it see my <a href="https://stackoverflow.com/questions/68766668/django-best-practice-for-running-switching-dev-debug-product-mode/68766902#68766902"> stack overflow answer. </a>
+
+
 
 ## Contribution Guidelines 
 
 Any changes are whole heartedly welcome, create an issue to report a bug. Or even better make a pr to fix it. 
 
-> Note I created ```local.py``` to mirror django's ```manage.py``` and use it for development to know more about it see my <a href="https://stackoverflow.com/questions/68766668/django-best-practice-for-running-switching-dev-debug-product-mode/68766902#68766902"> stack overflow answer. </a>
