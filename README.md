@@ -47,7 +47,8 @@ python local.py runserver
 
 > ### Note Important
 > I created ```local.py``` to mirror django's ```manage.py``` and use it for development to know more about it see my <a href="https://stackoverflow.com/questions/68766668/django-best-practice-for-running-switching-dev-debug-product-mode/68766902#68766902"> stack overflow answer. </a>
-
+> I know it creates some duplicate code and can be a bad practise, but since it simplifies things i go with it XD.
+> Furthermore, currently I make a third file where I store the common code and inhereit from there, I will update this repo as well wherever I get time.
 
 
 ## Contribution Guidelines 
