@@ -68,6 +68,14 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Researchportal.wsgi.application'
 
 
+
+# redirect to https only 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = True
+
+
+
+
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
@@ -139,6 +147,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
+
+
+
+
+
 
 
 
